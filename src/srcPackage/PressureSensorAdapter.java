@@ -14,18 +14,18 @@ public class PressureSensorAdapter implements Sensor
     @Override
     public double readValue()
     {
-        return 0;
+        return adaptee.readValue();
     }
 
     @Override
     public String readReport()
     {
-        return null;
+        return adaptee.getReport();
     }
 
     @Override
     public String readName()
     {
-        return null;
+        return adaptee.getSensorName();
     }
 }

@@ -14,18 +14,18 @@ public class TemperatureSensorAdapter implements Sensor
     @Override
     public double readValue()
     {
-        return 0;
+        return adaptee.senseTemperature();
     }
 
     @Override
     public String readReport()
     {
-        return null;
+        return adaptee.getTempReport();
     }
 
     @Override
     public String readName()
     {
-        return null;
+        return adaptee.getSensorType();
     }
 }

@@ -14,18 +14,18 @@ public class RadiationSensorAdapter implements Sensor
     @Override
     public double readValue()
     {
-        return 0;
+        return adaptee.getRadiationValue();
     }
 
     @Override
     public String readReport()
     {
-        return null;
+        return adaptee.getStatusInfo();
     }
 
     @Override
     public String readName()
     {
-        return null;
+        return adaptee.getName();
     }
 }
